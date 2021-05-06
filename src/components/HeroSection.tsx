@@ -1,7 +1,9 @@
 import React from 'react';
 import './HeroSection.scss';
 import LOGO_PATH from '../assets/media/gameforge-logo.png';
-import * as BACKGROUND_VIDEO from '../assets/media/gameforge-video.mp4';
+import SEARCH_ICON_PATH from '../assets/media/search.svg';
+import CLOSE_ICON_PATH from '../assets/media/close.svg';
+import * as BACKGROUND_VIDEO_PATH from '../assets/media/gameforge-video.mp4';
 
 export const HeroSection: React.FC = () => {
   return (
@@ -24,7 +26,7 @@ export const HeroSection: React.FC = () => {
           autoPlay={true}
           loop={true}
           muted={true}
-          src={BACKGROUND_VIDEO.default}
+          src={BACKGROUND_VIDEO_PATH.default}
         />
         <h2>Lorem ipsum dolor sit amet consectetur</h2>
         <p>
@@ -32,9 +34,9 @@ export const HeroSection: React.FC = () => {
           anyone in the world. Play any game on any device!
         </p>
         <div className="search--bar">
-          <span className="search--bar__icon"></span>
+          <img className="search--bar__icon" src={SEARCH_ICON_PATH} />
           <input type="text" placeholder="Search Games" />
-          <span className="search--bar__close"></span>
+          <img className="search--bar__close" src={CLOSE_ICON_PATH} />
         </div>
       </div>
     </div>
