@@ -1,0 +1,17 @@
+$contactBackgroundColor: black;
+$copyrightBackgroundColor: #1e1e1e;
+
+.footer-container {
+  width: 100%;
+
+  .contact {
+    height: 70px;
+    background-color: white;
+    color: $contactBackgroundColor;
+  }
+
+  .copyright {
+    height: 30px;
+    background-color: $copyrightBackgroundColor;
+  }
+}

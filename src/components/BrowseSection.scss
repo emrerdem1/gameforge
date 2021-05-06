@@ -1,0 +1,24 @@
+.browse-container {
+  width: 100%;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-around;
+
+  .filters {
+    flex-grow: 1;
+
+    .option-list {
+      background-color: #1e1e1e;
+      height: 400px;
+    }
+  }
+
+  .games {
+    flex-grow: 2;
+
+    .game-list {
+      height: 400px;
+      background-color: #1e1e1e;
+    }
+  }
+}
