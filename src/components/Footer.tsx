@@ -39,7 +39,7 @@ export const Footer: React.FC = () => {
             <p>Site Language</p>
             <div className="language--dropdown">
               <span>English</span>
-              <img src={DOWN_ARROW_ICON} />
+              <img src={DOWN_ARROW_ICON} alt="language selector" />
             </div>
           </div>
         </div>

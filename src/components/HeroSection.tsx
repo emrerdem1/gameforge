@@ -34,9 +34,17 @@ export const HeroSection: React.FC = () => {
           anyone in the world. Play any game on any device!
         </p>
         <div className="search--bar">
-          <img className="search--bar__icon" src={SEARCH_ICON_PATH} />
+          <img
+            className="search--bar__icon"
+            src={SEARCH_ICON_PATH}
+            alt="search icon"
+          />
           <input type="text" placeholder="Search Games" />
-          <img className="search--bar__close" src={CLOSE_ICON_PATH} />
+          <img
+            className="search--bar__close"
+            src={CLOSE_ICON_PATH}
+            alt="close icon"
+          />
         </div>
       </div>
     </div>

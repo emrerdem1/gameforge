@@ -10,9 +10,63 @@ export const BrowseSection: React.FC = () => {
           <div className="option-list--item">
             <div className="collapse-header">State</div>
             <div className="selection-list">
-              <div>Available</div>
-              <div>Patching</div>
-              <div>Maintenance</div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Available</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Patching</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Maintenance</span>
+              </div>
+            </div>
+          </div>
+          <div className="option-list--item">
+            <div className="collapse-header">State</div>
+            <div className="selection-list">
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Available</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Patching</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Maintenance</span>
+              </div>
+            </div>
+            <div className="selection-list">
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Available</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Patching</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Maintenance</span>
+              </div>
+            </div>
+            <div className="selection-list">
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Available</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Patching</span>
+              </div>
+              <div className="selection-list--item">
+                <input type="checkbox"></input>
+                <span>Maintenance</span>
+              </div>
             </div>
           </div>
         </div>
