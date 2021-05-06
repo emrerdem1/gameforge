@@ -55,17 +55,16 @@ export const HeroSection: React.FC = (): JSX.Element => {
           />
           {searchInput && (
             <>
-              <a
+              <div
                 className="search--bar__close"
                 onClick={() => setSearchInput('')}
-                href="#"
               >
                 <img
                   className="search--bar__close-icon"
                   src={CLOSE_ICON_PATH}
                   alt="close icon"
                 />
-              </a>
+              </div>
               <div className="searchPreview"></div>
             </>
           )}
