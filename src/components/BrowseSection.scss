@@ -8,7 +8,7 @@ $inlineGutter: 20px;
 
 .browse-container {
   max-width: $maxContentWidth - $horizontalGutter;
-  margin: $verticalGutter $horizontalGutter;
+  margin: $verticalGutter auto;
   display: flex;
   justify-content: center;
   gap: $inlineGutter;
@@ -18,6 +18,7 @@ $inlineGutter: 20px;
     flex-direction: column;
     gap: 24px;
     flex-grow: 1;
+    width: 80%;
 
     .option-list {
       background-color: $secondaryColor;
@@ -57,10 +58,89 @@ $inlineGutter: 20px;
 
   .games {
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .dropdown {
+      height: 40px;
+      width: 150px;
+      background-color: $secondaryColor;
+      display: inline-block;
+      margin-left: auto;
+
+      .button-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 24px;
+        }
+      }
+
+      &-button {
+        border: none;
+        background: transparent;
+        height: 100%;
+        color: $greyish;
+        font-size: 18px;
+        padding: 0 8px;
+      }
+
+      &-items {
+        display: none;
+      }
+    }
 
     .game-list {
-      height: 400px;
-      background-color: $secondaryColor;
+      display: flex;
+      flex-direction: column;
+
+      &--item {
+        min-height: 400px;
+        background-color: $secondaryColor;
+        padding: 30px;
+
+        &_letter {
+          position: relative;
+          height: 60px;
+          width: 60px;
+          margin-bottom: 30px;
+          display: flex;
+
+          span {
+            height: 100%;
+            font-size: 28px;
+            z-index: 1;
+            width: 100%;
+            line-height: 60px;
+            text-align: center;
+            font-weight: bold;
+            color: $primaryColor;
+          }
+
+          img {
+            position: absolute;
+            width: 60px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        &_bullets {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+
+          p {
+            width: 40%;
+          }
+        }
+      }
     }
   }
 }
