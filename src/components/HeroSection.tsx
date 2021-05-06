@@ -1,21 +1,21 @@
 import React from 'react';
 import './HeroSection.scss';
 
-const LOGO_PATH = '/src/images/gameforge-logo.png';
+const LOGO_PATH = '../images/gameforge-logo.png';
 
 export const HeroSection: React.FC = () => {
   return (
     <div className="hero-container">
       <header className="header">
-        <img className="header--logo" src={LOGO_PATH}></img>
+        <img className="header--logo" src={LOGO_PATH} />
         <div className="header--items">
           <li>Games</li>
           <li>Membership</li>
           <li>Download</li>
           <li>Blog</li>
           <li>Support</li>
+          <button>Let's Play</button>
         </div>
-        <button className="header--button">Let's Play</button>
       </header>
       <div className="search">
         <h2>Lorem ipsum dolor sit amet consectetur</h2>
