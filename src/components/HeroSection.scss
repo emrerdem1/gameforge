@@ -10,7 +10,6 @@
     background-color: white;
 
     &--logo {
-      width: 320px;
       height: auto;
     }
 
@@ -36,7 +35,42 @@
   }
 
   .search {
-    height: 300px;
-    background-color: rgb(18, 87, 18);
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    // Width of the video is too long to look good in parent's container.
+    // So make it slightly greater than the parent's height.
+    video {
+      height: 120%;
+      position: absolute;
+      z-index: -10;
+    }
+
+    &--bar {
+      min-width: 300px;
+      width: 60vw;
+      height: 40px;
+
+      &__icon,
+      &__close {
+        height: 100%;
+        width: 12px;
+      }
+
+      &__icon {
+        background-image: url('/src/assets/media/search.svg');
+      }
+
+      &__close {
+        background-image: url('/src/assets/media/close.svg');
+      }
+    }
   }
 }
