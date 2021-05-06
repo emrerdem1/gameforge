@@ -1,8 +1,16 @@
+@import '../common/breakpoints.scss';
+
+$maxContentWidth: 1400px;
+$horizontalGutter: 80px;
+$verticalGutter: 50px;
+$inlineGutter: 20px;
+
 .browse-container {
-  width: 100%;
-  margin: 40px auto;
+  max-width: $maxContentWidth - $horizontalGutter;
+  margin: $verticalGutter $horizontalGutter;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: $inlineGutter;
 
   .filters {
     flex-grow: 1;
