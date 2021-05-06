@@ -58,6 +58,7 @@ export const HeroSection: React.FC = (): JSX.Element => {
               <a
                 className="search--bar__close"
                 onClick={() => setSearchInput('')}
+                href="#"
               >
                 <img
                   className="search--bar__close-icon"
