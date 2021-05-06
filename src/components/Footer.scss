@@ -4,14 +4,81 @@ $copyrightBackgroundColor: #1e1e1e;
 .footer-container {
   width: 100%;
 
+  > div {
+    padding: 24px 80px;
+  }
+
   .contact {
-    height: 70px;
+    display: flex;
+    height: 115px;
     background-color: white;
     color: $contactBackgroundColor;
+    justify-content: space-between;
+
+    li {
+      line-height: 22px;
+    }
+    .socialAndLanguage {
+      display: flex;
+
+      .socials,
+      .language {
+        margin: 0 100px;
+
+        p {
+          font-weight: bold;
+          margin-bottom: 14px;
+        }
+
+        .icons {
+          display: flex;
+          gap: 12px;
+          height: 22px;
+          align-items: center;
+
+          img {
+            height: 16px;
+            filter: brightness(0.4);
+          }
+        }
+      }
+
+      .language--dropdown {
+        display: flex;
+        gap: 6px;
+
+        img {
+          width: 22px;
+          height: 22px;
+        }
+      }
+    }
+
+    .navigation {
+      display: flex;
+
+      &--links {
+        margin-right: 64px;
+      }
+    }
   }
 
   .copyright {
-    height: 30px;
+    height: 42px;
     background-color: $copyrightBackgroundColor;
+    display: flex;
+    justify-content: space-between;
+
+    .policy,
+    .copyright-text {
+      display: flex;
+      align-items: center;
+
+      li {
+        padding-right: 16px;
+        font-size: 12px;
+        line-height: 1.8;
+      }
+    }
   }
 }
