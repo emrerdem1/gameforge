@@ -46,10 +46,7 @@
     align-items: center;
     gap: 30px;
 
-    // Width of the video is too long to look good in parent's container.
-    // So make it greater than the parent's height.
     video {
-      height: 150%;
       position: absolute;
       z-index: -10;
     }
@@ -57,7 +54,7 @@
     &--bar {
       min-width: 300px;
       max-width: 1000px;
-      width: 60vw;
+      width: 56vw;
       height: 56px;
       background-color: white;
       display: flex;

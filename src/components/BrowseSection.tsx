@@ -13,15 +13,21 @@ export const BrowseSection: React.FC = () => {
             <div className="collapse-header">State</div>
             <div className="selection-list">
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Available</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Patching</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Maintenance</span>
               </div>
             </div>
@@ -30,43 +36,61 @@ export const BrowseSection: React.FC = () => {
             <div className="collapse-header">State</div>
             <div className="selection-list">
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Available</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Patching</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Maintenance</span>
               </div>
             </div>
             <div className="selection-list">
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Available</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Patching</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Maintenance</span>
               </div>
             </div>
             <div className="selection-list">
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Available</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Patching</span>
               </div>
               <div className="selection-list--item">
-                <input type="checkbox"></input>
+                <div className="checkbox-trigger">
+                  <input type="checkbox"></input>
+                </div>
                 <span>Maintenance</span>
               </div>
             </div>
