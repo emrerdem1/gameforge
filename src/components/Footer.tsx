@@ -5,6 +5,7 @@ import FACEBOOK_ICON from '../assets/media/icon-facebook.svg';
 import TWITTER_ICON from '../assets/media/icon-twitter.svg';
 import YOUTUBE_ICON from '../assets/media/icon-youtube.svg';
 import INSTAGRAM_ICON from '../assets/media/icon-instagram.svg';
+import { ORIGIN_LINKS, SOCIAL_LINKS } from '../common/constants';
 
 export const Footer: React.FC = () => {
   return (
@@ -29,10 +30,35 @@ export const Footer: React.FC = () => {
           <div className="socials">
             <p>Follow Us!</p>
             <div className="icons">
-              <img src={FACEBOOK_ICON} alt="facebook" />
-              <img src={TWITTER_ICON} alt="twitter" />
-              <img src={INSTAGRAM_ICON} alt="instagram" />
-              <img src={YOUTUBE_ICON} alt="youtube" />
+              <a
+                href={SOCIAL_LINKS.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={FACEBOOK_ICON} alt="facebook" />
+              </a>
+
+              <a
+                href={SOCIAL_LINKS.twitter}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={TWITTER_ICON} alt="twitter" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={INSTAGRAM_ICON} alt="instagram" />
+              </a>
+              <a
+                href={SOCIAL_LINKS.youtube}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={YOUTUBE_ICON} alt="youtube" />
+              </a>
             </div>
           </div>
           <div className="language">
@@ -46,9 +72,33 @@ export const Footer: React.FC = () => {
       </div>
       <div className="copyright">
         <div className="policy">
-          <li>Terms of Use</li>
-          <li>Privacy Policy</li>
-          <li>Cookies</li>
+          <li>
+            <a
+              href={ORIGIN_LINKS.termOfUse}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Terms of Use
+            </a>
+          </li>
+          <li>
+            <a
+              href={ORIGIN_LINKS.policy}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Privacy Policy
+            </a>
+          </li>
+          <li>
+            <a
+              href={ORIGIN_LINKS.cookies}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Cookies
+            </a>
+          </li>
         </div>
         <div className="copyright-text">
           <li>Tüm hakları saklıdır.</li>

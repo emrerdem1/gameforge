@@ -12,7 +12,7 @@
     background-color: white;
 
     &--logo {
-      height: auto;
+      height: 100%;
     }
 
     &--items {
@@ -21,16 +21,25 @@
       li {
         color: $primaryColor;
         padding: 8px 20px;
+        font-weight: bold;
+
+        a:hover {
+          color: $limeGreen;
+        }
       }
 
-      button {
-        height: 40px;
-        width: 185px;
+      a {
         margin-left: 30px;
-        background-color: $limeGreen;
-        color: white;
-        border: none;
-        text-transform: uppercase;
+
+        button {
+          height: 40px;
+          width: 185px;
+          background-color: $limeGreen;
+          color: white;
+          border: none;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
       }
     }
   }

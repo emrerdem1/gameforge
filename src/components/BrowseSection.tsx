@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './BrowseSection.scss';
 import POLYGON from '../assets/media/polygon.png';
+import { GAME_LIST_LETTERS, RANDOM_BULLET_POINTS } from '../common/constants';
 
 const SortingType = {
   ascending: 'ASCENDING',
@@ -172,20 +173,6 @@ export const BrowseSection: React.FC = () => {
     </div>
   );
 };
-
-const GAME_LIST_LETTERS = ['A', 'B', 'C', 'D', 'E'];
-const RANDOM_BULLET_POINTS = [
-  'A missing slice of pizza inspires Namco.',
-  'Video game fans go ape over Nintendo’s',
-  'Disney taps into the video game craze.',
-  'Multiplayer play takes a huge step forward',
-  'Alexey Pajitnov creates Tetris, a puzzle game.',
-  'John Madden Football introduces gridiron.',
-  'World of Warcraft: Burning Crusade Classic',
-  'Blizzard has also helpfully laid out',
-  'The Titanfall 2 free weekend has finished',
-  'Battle pass should not differ from previous',
-];
 
 interface MultiGameListSpec {
   letter: string;
